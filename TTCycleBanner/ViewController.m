@@ -52,7 +52,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.dataArray = @[@"轮播图", @"非全屏换页1", @"非全屏换页1", @"非全屏换页2", @"页面消失自动关闭轮播，展示自动开启轮播"];
+    self.dataArray = @[@"轮播图", @"轮播组件不循环", @"轮播组件单张自动适配宽度", @"轮播组件", @"页面消失自动关闭轮播，展示自动开启轮播"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.tableView reloadData];
 
