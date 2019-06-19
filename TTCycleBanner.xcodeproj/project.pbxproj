@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C101F97422B9D42E004D2CFA /* TTCombineDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C101F96D22B9D42E004D2CFA /* TTCombineDelegateProxy.m */; };
+		C101F97522B9D42E004D2CFA /* TTPagingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C101F97122B9D42E004D2CFA /* TTPagingCollectionView.m */; };
+		C101F97622B9D42E004D2CFA /* TTCycleBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C101F97322B9D42E004D2CFA /* TTCycleBanner.m */; };
 		C1A9940822B8A36300E0B722 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9940722B8A36300E0B722 /* AppDelegate.m */; };
 		C1A9940B22B8A36300E0B722 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9940A22B8A36300E0B722 /* ViewController.m */; };
 		C1A9940E22B8A36300E0B722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9940C22B8A36300E0B722 /* Main.storyboard */; };
 		C1A9941022B8A36600E0B722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A9940F22B8A36600E0B722 /* Assets.xcassets */; };
 		C1A9941322B8A36600E0B722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9941122B8A36600E0B722 /* LaunchScreen.storyboard */; };
 		C1A9941622B8A36600E0B722 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9941522B8A36600E0B722 /* main.m */; };
-		C1A9942122B8A42800E0B722 /* TTPagingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9941E22B8A42800E0B722 /* TTPagingCollectionView.m */; };
-		C1A9942222B8A42800E0B722 /* TTCycleBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9942022B8A42800E0B722 /* TTCycleBanner.m */; };
-		C1A9942522B8A44500E0B722 /* TTCombineDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9942422B8A44500E0B722 /* TTCombineDelegateProxy.m */; };
 		C1A9949A22B8A61D00E0B722 /* NSImage+Compatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9942822B8A61C00E0B722 /* NSImage+Compatibility.m */; };
 		C1A9949B22B8A61D00E0B722 /* SDAnimatedImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9942A22B8A61C00E0B722 /* SDAnimatedImageView+WebCache.m */; };
 		C1A9949C22B8A61D00E0B722 /* SDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9942C22B8A61C00E0B722 /* SDImageCoder.m */; };
@@ -74,6 +74,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C101F96D22B9D42E004D2CFA /* TTCombineDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCombineDelegateProxy.m; sourceTree = "<group>"; };
+		C101F96E22B9D42E004D2CFA /* TTCombineDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCombineDelegateProxy.h; sourceTree = "<group>"; };
+		C101F97022B9D42E004D2CFA /* TTCycleBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCycleBanner.h; sourceTree = "<group>"; };
+		C101F97122B9D42E004D2CFA /* TTPagingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPagingCollectionView.m; sourceTree = "<group>"; };
+		C101F97222B9D42E004D2CFA /* TTPagingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPagingCollectionView.h; sourceTree = "<group>"; };
+		C101F97322B9D42E004D2CFA /* TTCycleBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCycleBanner.m; sourceTree = "<group>"; };
 		C1A9940322B8A36300E0B722 /* TTCycleBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTCycleBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A9940622B8A36300E0B722 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1A9940722B8A36300E0B722 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,12 +90,6 @@
 		C1A9941222B8A36600E0B722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1A9941422B8A36600E0B722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A9941522B8A36600E0B722 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C1A9941D22B8A42800E0B722 /* TTCycleBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCycleBanner.h; sourceTree = "<group>"; };
-		C1A9941E22B8A42800E0B722 /* TTPagingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPagingCollectionView.m; sourceTree = "<group>"; };
-		C1A9941F22B8A42800E0B722 /* TTPagingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPagingCollectionView.h; sourceTree = "<group>"; };
-		C1A9942022B8A42800E0B722 /* TTCycleBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCycleBanner.m; sourceTree = "<group>"; };
-		C1A9942322B8A44500E0B722 /* TTCombineDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCombineDelegateProxy.h; sourceTree = "<group>"; };
-		C1A9942422B8A44500E0B722 /* TTCombineDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCombineDelegateProxy.m; sourceTree = "<group>"; };
 		C1A9942722B8A61C00E0B722 /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAnimatedImageRep.h; sourceTree = "<group>"; };
 		C1A9942822B8A61C00E0B722 /* NSImage+Compatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Compatibility.m"; sourceTree = "<group>"; };
 		C1A9942922B8A61C00E0B722 /* SDDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDiskCache.h; sourceTree = "<group>"; };
@@ -217,6 +217,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C101F96C22B9D42E004D2CFA /* TTCombineDelegateProxy */ = {
+			isa = PBXGroup;
+			children = (
+				C101F96E22B9D42E004D2CFA /* TTCombineDelegateProxy.h */,
+				C101F96D22B9D42E004D2CFA /* TTCombineDelegateProxy.m */,
+			);
+			path = TTCombineDelegateProxy;
+			sourceTree = "<group>";
+		};
+		C101F96F22B9D42E004D2CFA /* TTCycleBanner */ = {
+			isa = PBXGroup;
+			children = (
+				C101F97222B9D42E004D2CFA /* TTPagingCollectionView.h */,
+				C101F97122B9D42E004D2CFA /* TTPagingCollectionView.m */,
+				C101F97022B9D42E004D2CFA /* TTCycleBanner.h */,
+				C101F97322B9D42E004D2CFA /* TTCycleBanner.m */,
+			);
+			path = TTCycleBanner;
+			sourceTree = "<group>";
+		};
 		C1A993FA22B8A36200E0B722 = {
 			isa = PBXGroup;
 			children = (
@@ -236,8 +256,9 @@
 		C1A9940522B8A36300E0B722 /* TTCycleBanner */ = {
 			isa = PBXGroup;
 			children = (
+				C101F96C22B9D42E004D2CFA /* TTCombineDelegateProxy */,
+				C101F96F22B9D42E004D2CFA /* TTCycleBanner */,
 				C1A9942622B8A61C00E0B722 /* SDWebImage */,
-				C1A9941C22B8A42800E0B722 /* PagingCollectionView */,
 				C1A9940622B8A36300E0B722 /* AppDelegate.h */,
 				C1A9940722B8A36300E0B722 /* AppDelegate.m */,
 				C1A9940922B8A36300E0B722 /* ViewController.h */,
@@ -249,19 +270,6 @@
 				C1A9941522B8A36600E0B722 /* main.m */,
 			);
 			path = TTCycleBanner;
-			sourceTree = "<group>";
-		};
-		C1A9941C22B8A42800E0B722 /* PagingCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				C1A9942322B8A44500E0B722 /* TTCombineDelegateProxy.h */,
-				C1A9942422B8A44500E0B722 /* TTCombineDelegateProxy.m */,
-				C1A9941F22B8A42800E0B722 /* TTPagingCollectionView.h */,
-				C1A9941E22B8A42800E0B722 /* TTPagingCollectionView.m */,
-				C1A9941D22B8A42800E0B722 /* TTCycleBanner.h */,
-				C1A9942022B8A42800E0B722 /* TTCycleBanner.m */,
-			);
-			path = PagingCollectionView;
 			sourceTree = "<group>";
 		};
 		C1A9942622B8A61C00E0B722 /* SDWebImage */ = {
@@ -463,9 +471,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A9942122B8A42800E0B722 /* TTPagingCollectionView.m in Sources */,
 				C1A994AB22B8A61D00E0B722 /* SDWebImageCompat.m in Sources */,
 				C1A9949C22B8A61D00E0B722 /* SDImageCoder.m in Sources */,
+				C101F97622B9D42E004D2CFA /* TTCycleBanner.m in Sources */,
 				C1A994A522B8A61D00E0B722 /* SDWebImageCacheSerializer.m in Sources */,
 				C1A994C722B8A61D00E0B722 /* SDImageCacheDefine.m in Sources */,
 				C1A994A422B8A61D00E0B722 /* SDImageLoader.m in Sources */,
@@ -490,7 +498,6 @@
 				C1A994C222B8A61D00E0B722 /* SDWebImageTransition.m in Sources */,
 				C1A994A922B8A61D00E0B722 /* UIImage+MultiFormat.m in Sources */,
 				C1A994C022B8A61D00E0B722 /* SDImageLoadersManager.m in Sources */,
-				C1A9942522B8A44500E0B722 /* TTCombineDelegateProxy.m in Sources */,
 				C1A994CA22B8A61D00E0B722 /* SDWebImageCacheKeyFilter.m in Sources */,
 				C1A994BD22B8A61D00E0B722 /* SDImageGIFCoder.m in Sources */,
 				C1A994B222B8A61D00E0B722 /* SDDiskCache.m in Sources */,
@@ -505,6 +512,7 @@
 				C1A994AA22B8A61D00E0B722 /* SDMemoryCache.m in Sources */,
 				C1A994C522B8A61D00E0B722 /* UIImageView+WebCache.m in Sources */,
 				C1A994B922B8A61D00E0B722 /* NSBezierPath+RoundedCorners.m in Sources */,
+				C101F97422B9D42E004D2CFA /* TTCombineDelegateProxy.m in Sources */,
 				C1A994C922B8A61D00E0B722 /* SDImageCacheConfig.m in Sources */,
 				C1A9949D22B8A61D00E0B722 /* SDWebImageManager.m in Sources */,
 				C1A994CB22B8A61D00E0B722 /* SDWebImageDefine.m in Sources */,
@@ -520,9 +528,9 @@
 				C1A9949B22B8A61D00E0B722 /* SDAnimatedImageView+WebCache.m in Sources */,
 				C1A994B122B8A61D00E0B722 /* SDImageIOCoder.m in Sources */,
 				C1A994A722B8A61D00E0B722 /* UIImage+GIF.m in Sources */,
+				C101F97522B9D42E004D2CFA /* TTPagingCollectionView.m in Sources */,
 				C1A994C322B8A61D00E0B722 /* SDImageTransformer.m in Sources */,
 				C1A994AF22B8A61D00E0B722 /* SDImageCoderHelper.m in Sources */,
-				C1A9942222B8A42800E0B722 /* TTCycleBanner.m in Sources */,
 				C1A994C122B8A61D00E0B722 /* SDImageCachesManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

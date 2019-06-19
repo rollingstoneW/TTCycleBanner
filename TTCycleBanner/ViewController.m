@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TTCycleBanner.h"
+#import "TTCombineDelegateProxy.h"
 
 @interface TestPagingCollectionCell : UICollectionViewCell
 @property (nonatomic, strong) UILabel *textLabel;
@@ -42,7 +43,7 @@
 @interface ViewController ()  <TTCycleBannerDelegate, TTPagingCollectionViewDataSource>
 
 @property (nonatomic, strong) TTPagingCollectionView *pagingView;
-
+@property (nonatomic, strong) TTCombineDelegateProxy *delegateProxy;
 @property (nonatomic, strong) NSArray *dataArray;
 
 @end
@@ -56,14 +57,18 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.tableView reloadData];
 
-
     [self showCycleBanner];
-
 
     UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"第0个" style:UIBarButtonItemStyleDone target:self action:@selector(scrollToFirst)];
     UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithTitle:@"前一个" style:UIBarButtonItemStyleDone target:self action:@selector(scrollToPrevious)];
     UIBarButtonItem *item3 = [[UIBarButtonItem alloc] initWithTitle:@"后一个" style:UIBarButtonItemStyleDone target:self action:@selector(scrollToNext)];
     self.navigationItem.rightBarButtonItems = @[item1, item2, item3];
+}
+
+- (void)setPagingView:(TTPagingCollectionView *)pagingView {
+    _pagingView = pagingView;
+    pagingView.delegate = self;
+    self.tableView.tableHeaderView = pagingView;
 }
 
 - (void)showCycleBanner {
@@ -74,8 +79,6 @@
     NSArray *images = @[[UIImage imageNamed:@"beach"]];
     cycleBanner.backgroundColor = [UIColor lightGrayColor];
     cycleBanner.items = [TTCycleBannerItem itemsWithImageUrls:urls titlesOrPretty:titles localImages:images];
-    cycleBanner.delegate = self;
-    self.tableView.tableHeaderView = cycleBanner;
     self.pagingView = cycleBanner;
 }
 
@@ -89,8 +92,6 @@
     pagingCollectionView.adjustMarginRightToShowLastCellAlignRight = YES;
     [pagingCollectionView registerClass:[TestPagingCollectionCell class] forCellReuseIdentifier:@"cell"];
     pagingCollectionView.dataSource = self;
-    pagingCollectionView.delegate = self;
-    self.tableView.tableHeaderView = pagingCollectionView;
     self.pagingView = pagingCollectionView;
 }
 
@@ -103,8 +104,6 @@
     pagingCollectionView.tag = 100;
     [pagingCollectionView registerClass:[TestPagingCollectionCell class] forCellReuseIdentifier:@"cell"];
     pagingCollectionView.dataSource = self;
-    pagingCollectionView.delegate = self;
-    self.tableView.tableHeaderView = pagingCollectionView;
     self.pagingView = pagingCollectionView;
 }
 

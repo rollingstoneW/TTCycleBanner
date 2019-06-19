@@ -27,6 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSArray *whitelistForSecondaryDelegateSelector; // 次要代理的方法白名单，不指定就可以执行所有方法
 @property (nonatomic, copy) NSArray *blacklistForSecondaryDelegateSelector; // 次要代理的方法黑名单，黑名单里的方法不会被执行
 
+
+/**
+ @param prior weak reference
+ @param secondary weak reference
+ */
 + (instancetype)proxyWithPriorDelegate:(id)prior secondaryDelegate:(nullable id)secondary;
 
 @end

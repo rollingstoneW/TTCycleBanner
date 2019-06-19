@@ -11,8 +11,8 @@
 
 @interface TTCombineDelegateProxy ()
 
-@property (nonatomic, strong) id priorDelegate;
-@property (nonatomic, strong, nullable) id secondaryDelegate;
+@property (nonatomic, weak) id priorDelegate;
+@property (nonatomic, weak, nullable) id secondaryDelegate;
 
 @end
 
