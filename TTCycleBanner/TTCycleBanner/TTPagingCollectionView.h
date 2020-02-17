@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 - (NSInteger)numberOfRowsInPagingCollectionView:(TTPagingCollectionView *)collectionView;
 - (UICollectionViewCell *)pagingCollectionView:(TTPagingCollectionView *)collectionView cellForItemAtIndex:(NSInteger)index;
+- (UICollectionViewCell *)pagingCollectionView:(TTPagingCollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell atIndex:(NSInteger)index;
 
 @end
 

@@ -319,6 +319,12 @@ static const NSInteger kSectionNumberOfInfinateScroll = 5;
     return nil;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.dataSource && [self.dataSource respondsToSelector:@selector(pagingCollectionView:willDisplayCell:atIndex:)]) {
+        [self.dataSource pagingCollectionView:self willDisplayCell:cell atIndex:indexPath.item];
+    }
+}
+
 #pragma -mark CollectionView Delegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

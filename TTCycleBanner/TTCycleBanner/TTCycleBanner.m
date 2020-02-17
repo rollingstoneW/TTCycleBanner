@@ -64,7 +64,7 @@
     if (item.prettyTitle) {
         self.textLabel.attributedText = item.prettyTitle;
     }
-    self.textLabel.hidden = !self.textLabel.text.length && self.textLabel.attributedText.length;
+    self.textLabel.hidden = !self.textLabel.text.length && !self.textLabel.attributedText.length;
     if (item.imageUrl) {
         [self.imageView sd_setImageWithURL:[NSURL URLWithString:item.imageUrl]];
     }
@@ -106,6 +106,7 @@
 - (UIImageView *)imageView {
     if (!_imageView) {
         _imageView = [[UIImageView alloc] init];
+        _imageView.contentMode = UIViewContentModeScaleToFill;
     }
     return _imageView;
 }
@@ -153,7 +154,6 @@
     self.delegate = (id<TTCycleBannerDelegate>)self;
     self.dataSource = self;
     self.customCellClass = [TTCycleBannerCell class];
-    [self registerClass:[TTCycleBannerCell class] forCellReuseIdentifier:NSStringFromClass(self.customCellClass)];
 }
 
 - (void)setItems:(NSArray *)items {
@@ -173,6 +173,11 @@
     proxy.blacklistForSecondaryDelegateSelector = proxy.whitelistForPriorDelegateSelector;
     self.delegateProxy = proxy;
     [super setDelegate:(id<TTCycleBannerDelegate>)proxy];
+}
+
+- (void)setCustomCellClass:(Class)customCellClass {
+    _customCellClass = customCellClass;
+    [self registerClass:customCellClass forCellReuseIdentifier:NSStringFromClass(customCellClass)];
 }
 
 - (NSInteger)numberOfRowsInPagingCollectionView:(TTPagingCollectionView *)collectionView {
